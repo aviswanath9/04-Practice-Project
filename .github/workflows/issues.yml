@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: Handle Issue Event
         run: |
-          echo "An issue event has occurred: ${{ github.event.action }}"
+          echo "An issue event has occurred: ${{ github.event }}"
