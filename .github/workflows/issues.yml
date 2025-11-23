@@ -1,0 +1,9 @@
+name: Handle Issues
+on: [issues]
+jobs:
+  handle-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Handle Issue Event
+        run: |
+          echo "An issue event has occurred: ${{ github.event.action }}"
